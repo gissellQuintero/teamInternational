@@ -1,0 +1,20 @@
+{
+    "viewportWidth": 1280,
+    "viewportHeight": 800,
+    "reporter": "cypress-multi-reporters",
+    "supportFile": "cypress/support/index.ts",
+    "defaultCommandTimeout": 20000,
+    "pageLoadTimeout": 100000,
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": true,
+            "json": true
+        }
+    },
+    "testFiles": "**/*.ts",    
+     "baseUrl": "https://uat.digital.airline.amadeus.com/av/booking"
+}
