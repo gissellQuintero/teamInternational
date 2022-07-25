@@ -10,8 +10,9 @@ export default  {
 
     BTN_FareL:'#container-cabin-choice > cabin-choice-cont > cabin-choice-pres > div > div:nth-child(1) > fare-comparison-table-cont > dynamic-fare-comparison-table-pres > div > div.wrapper > div.ff-container.fare-family-L.ff-container-branded-fare.ff-container-not-show.ng-star-inserted > div > div.ff-attributes > div.available > div.button-desktop-container > button > span.amount.amount-branded-fare',
    // BTN_FareL: '[data-test="TA-ff-L"]',
+   BTN_FareXXL: '#container-cabin-choice > cabin-choice-cont > cabin-choice-pres > div > div:nth-child(2) > fare-comparison-table-cont > dynamic-fare-comparison-table-pres > div > div.wrapper > div.ff-container.fare-family-XXL.ff-container-branded-fare.ng-star-inserted > div > div.ff-attributes.attribute-XL-XXL > div.available > div.button-desktop-container > button',
     BTN_FareXL: '[data-test="TA-ff-XL"]',
-    BTN_FareXXL: '[data-test="TA-ff-XXL"]',
+    //BTN_FareXXL: '[data-test="TA-ff-XXL"]',
     BTN_BestPrice: '(//div[@class=\'new-filter-component vertical-aligned-line\']//button)[2]',
     BTN_BusinessClass: '(//span[@class=\'cabin-title\'])[2]',
     Flight_BondsStickyContainer: '.sticky >>>> .bound',

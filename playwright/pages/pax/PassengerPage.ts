@@ -55,7 +55,7 @@ export class PassengerPage extends commonPage{
             
             if(aditionalData == 'Yes' )
             {
-                await this.page.click(locators.SLC_Gender);
+                //await this.page.click(locators.SLC_Gender);
                 await this.page.click(locators.SLC_GenderSelect);
                 await this.page.click(locators.SLC_Nationality);
                 await this.page.click(locators.SLC_NationalitySelec);
@@ -85,7 +85,7 @@ export class PassengerPage extends commonPage{
 
             if(aditionalData == 'Yes' )
             {
-                await this.page.click(locators.SLC_Gender);
+               // await this.page.click(locators.SLC_Gender);
                 await this.page.click(locators.SLC_GenderSelect);
                 await this.page.click(locators.SLC_Nationality);
                 await this.page.click(locators.SLC_NationalitySelec);

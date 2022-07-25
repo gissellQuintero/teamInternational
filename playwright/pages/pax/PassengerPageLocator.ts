@@ -12,10 +12,11 @@ export default  {
     PANEL_MonthSelection: ".mat-select-panel-wrap",
     BTN_Next: ".passenger-btn",
 
-    SLC_GenderSelect:'(//mat-option[@id=\'mat-option-0\'])',
-    SLC_Nationality:'(//mat-select[@id=\'mat-select-4\']))',
-    SLC_NationalitySelec:'(//mat-option[@id=\'mat-option-2\'])',
-    SLC_MonthAditional:'(//div[@class=\'mat-select-arrow\'])[3]',
+    SLC_Gender: '.gender-select',
+    SLC_GenderSelect:'[data-test="TA-ff-male"]',
+    SLC_Nationality:'#mat-select-value-5 > span',
+    SLC_NationalitySelec:'[data-test="TA-ff-Colombia"]',
+    SLC_MonthAditional:'#mat-select-value-3 > span',
   
     FirstNameChild: '(//input[contains(@class,\'mat-input-element mat-form-field-autofill-control\')])[1]',
     LastNameChild: '(//input[contains(@class,\'mat-input-element mat-form-field-autofill-control\')])[2]',

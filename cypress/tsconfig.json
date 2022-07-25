@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "../node_modules",
+    "target": "es2017",
+    "types": ["node","cypress"],
+    "noEmit": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "module": "commonjs"
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node",
+    "../node_modules"
+  ]
+}
