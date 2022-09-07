@@ -48,7 +48,7 @@ export class TestPage {
 
   public createUrl(env: string) {
     let url = "";
-    url = this.getValue(env) +  this.buildUrl();
+    url = this.getValue(env) + "?" + this.buildUrl();
     this.setValue("constructedURL", url);
   }
 
@@ -58,13 +58,22 @@ export class TestPage {
 
   public buildUrl(): string {
     let url = "";
-   
-    url = url + "identification?identifier=" + this.getValue("pnr") + "&"
-              + "lang=" + this.getValue("language") + "&"
-              + "lastName=" + this.getValue("lastName") + "&"
+    const departureDate = new Date(+this.getValue("departureDate"));
+    const returnDate = this.getValue("returnDate") ?
+                       new Date(+this.getValue("returnDate")).toISOString().slice(0,10) : '';
+    url = url + "language=" + this.getValue("language") + "&"
+              + "from=" + this.getValue("from") + "&"
+              + "to=" + this.getValue("to") + "&"
+              + "departureDate=" + departureDate.toISOString().slice(0,10) + "&"
+              + "returnDate=" + returnDate+ "&"
+              + "nbAdults=" + this.getValue("nbAdults") + "&"
+              + "nbChildren=" + this.getValue("nbChildren") + "&"
+              + "nbInfants=" + this.getValue("nbInfants") + "&"
               + "pointOfSale=" + this.getValue("pointOfSale") + "&"
               + "trace=" + this.getValue("trace") + "&"
-              + 'overrides=%7B%22isExternalScriptsActivated%22%3A%22false%22%2C%22useHPP%22%3A%22true%22%7D'
+              + "tripType=" + this.getValue("tripType") + "&"
+              + 'overrides=%7B%22isExternalScriptsActivated%22%3A%22false%22%2C%22useHPP%22%3A%22true%22%7D' + "&"
+              + "platform="+this.getValue("platform")              
     return url;
   }
 }
