@@ -9,81 +9,104 @@ export class AvailabilityPage extends commonPage {
       super(testPage, page);
    }
 
+   /*async BTN_FareXXLl(este: string) {
+      return "(//button[@data-test='"+este+"'])[1]"
+  }*/
+  
+
    async selectFlightsByDefault(flowName: string, screenshotTitle: string, compare: boolean) {
       const tripType: string = this.testPage.getValue("tripType")
       const fareOutBound: string = this.testPage.getValue("fareOutBound")
       const fareInBound: string = this.testPage.getValue("fareInBound")
 
       await this.page.waitForSelector(locators.Flight_AvailableBounds);
-      await this.page.locator(locators.Flight_AvailableBounds).click({ force: true });
+      await this.page.locator(locators.Flight_AvailableBounds).click();
 
       if (tripType.includes('round')) {
 
 
          switch (fareOutBound) {
             case "XS": {
-               await this.page.locator(locators.BTN_FareXS).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareXS).click();
                break;
             }
             case "S": {
-               await this.page.locator(locators.BTN_FareS).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareS).click();
+                         
                //    await this.page.click(locators.BTN_ContinueFareS);
                break;
             }
             case "M": {
-               await this.page.locator(locators.BTN_FareM).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareM).click();
                break;
             }
             case "L": {
-               await this.page.locator(locators.BTN_FareL).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareL).click();
                break;
             }
             case "XL": {
-               await this.page.locator(locators.BTN_BusinessClass).first().click({ force: true });
-               await this.page.locator(locators.BTN_FareXL).first().click({ force: true });
+               await this.page.locator(locators.BTN_BusinessClass).click();
+               await this.page.locator(locators.BTN_FareXL).click();
                break;
             }
             default: {
-               await this.page.locator(locators.BTN_BusinessClass).first().click({ force: true });
-               await this.page.locator(locators.BTN_FareXXL).first().click({ force: true });
+               await this.page.locator(locators.BTN_BusinessClass).click();
+               await this.page.locator(locators.BTN_FareXXL).click();
                break;
             }
+         }
+
+         if (compare) 
+         {
+             await this.compareScreenshot(screenshotTitle + " Outbound");
+         } 
+         else
+         {
+             await this.addTestScreenshot(flowName, screenshotTitle+ " Outbound");
          }
 
          await this.page.locator(locators.Flight_AvailableBounds).waitFor;
          await this.page.waitForTimeout(5000)
-         await this.page.locator(locators.BTN_BestPrice).click({ force: true });
-         await this.page.locator(locators.Flight_AvailableBounds).click({ force: true });
+         await this.page.locator(locators.Flight_AvailableBounds).click();
 
          switch (fareInBound) {
             case "XS": {
-               await this.page.locator(locators.BTN_FareXS).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareXS).click();
                break;
             }
             case "S": {
-               await this.page.locator(locators.BTN_FareS).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareS).click();
                //    await this.page.click(locators.BTN_ContinueFareS);
                break;
             }
             case "M": {
-               await this.page.locator(locators.BTN_FareM).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareM).click();
                break;
             }
             case "L": {
-               await this.page.locator(locators.BTN_FareL).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareL).click();
                break;
             }
             case "XL": {
-               await this.page.locator(locators.BTN_BusinessClass).click({ force: true });
-               await this.page.locator(locators.BTN_FareXL).first().click({ force: true });
+               await this.page.locator(locators.BTN_BusinessClass).click();
+               await this.page.locator(locators.BTN_FareXL).click();
                break;
             }
             default: {
-               await this.page.locator(locators.BTN_BusinessClass).click({ force: true });
-               await this.page.locator(locators.BTN_FareXXL).first().click({ force: true });
+               await this.page.locator(locators.BTN_BusinessClass).click();
+               await this.page.locator(locators.BTN_FareXXL).click();
                break;
             }
          }
+         if (compare) 
+         {
+             await this.compareScreenshot(screenshotTitle+" Inbound");
+         } 
+         else
+         {
+             await this.addTestScreenshot(flowName, screenshotTitle);
+         }
+
       }
 
       if (tripType.includes('one')) {
@@ -95,30 +118,30 @@ export class AvailabilityPage extends commonPage {
 
          switch (fareInBound) {
             case "XS": {
-               await this.page.locator(locators.BTN_FareXS).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareXS).click();
                break;
             }
             case "S": {
-               await this.page.locator(locators.BTN_FareS).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareS).click();
                //    await this.page.click(locators.BTN_ContinueFareS);
                break;
             }
             case "M": {
-               await this.page.locator(locators.BTN_FareM).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareM).click();
                break;
             }
             case "L": {
-               await this.page.locator(locators.BTN_FareL).first().click({ force: true });
+               await this.page.locator(locators.BTN_FareL).click();
                break;
             }
             case "XL": {
-               await this.page.locator(locators.BTN_BusinessClass).click({ force: true });
-               await this.page.locator(locators.BTN_FareXL).first().click({ force: true });
+               await this.page.locator(locators.BTN_BusinessClass).click();
+               await this.page.locator(locators.BTN_FareXL).click();
                break;
             }
             default: {
-               await this.page.locator(locators.BTN_BusinessClass).click({ force: true });
-               await this.page.locator(locators.BTN_FareXXL).first().click({ force: true });
+               await this.page.locator(locators.BTN_BusinessClass).click();
+               await this.page.locator(locators.BTN_FareXXL).click();
                break;
             }
          }
