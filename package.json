@@ -2,7 +2,9 @@
   "name": "automation-ssciinitial",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "playwright:test:headed": "yarn playwright test --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
