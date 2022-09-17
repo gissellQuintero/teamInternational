@@ -31,7 +31,7 @@ test.describe(flowName, () => {
         }
     });
 
-    test('Availability Page', async() => {
+    test('Availability Page select default fares', async() => {
         const availPage = new AvailabilityPage(testPage,page);
         await availPage.selectFlightsByDefault(flowName,'TC01-01InitialPage',compare);
     });

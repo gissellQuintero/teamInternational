@@ -14,7 +14,7 @@ export class AvailabilityPage extends commonPage {
   }*/
   
 
-   async selectFlightsByDefault(flowName: string, screenshotTitle: string, compare: boolean) {
+   public async selectFlightsByDefault(flowName: string, screenshotTitle: string, compare: boolean) {
       const tripType: string = this.testPage.getValue("tripType")
       const fareOutBound: string = this.testPage.getValue("fareOutBound")
       const fareInBound: string = this.testPage.getValue("fareInBound")

@@ -8,7 +8,7 @@ export class TripSummaryPage extends commonPage {
        super(testPage, page);
     }
 
-    async validateTripInfo(flowName: string, screenshotTitle: string, compare: boolean) {
+    public async validateTripInfo(flowName: string, screenshotTitle: string, compare: boolean) {
         try {
             const tripType: string = this.testPage.getValue("tripType");
             await this.page.waitForSelector('.trip-summary-title');
