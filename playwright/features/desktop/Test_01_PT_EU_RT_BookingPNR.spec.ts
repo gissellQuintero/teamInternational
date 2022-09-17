@@ -2,6 +2,7 @@ import { test, expect, chromium, Browser, BrowserContext, Page, devices } from '
 import * as XLSX from 'xlsx';
 import { TestPage } from '../../pages/testPage';
 import { AvailabilityPage } from '../../pages/desktop/availability/AvailiabilityPage';
+import { TripSummaryPage} from '../../pages/desktop/TripSummary/TripSummaryPage';
 
 
 const flowName = 'Test_01_PT_EU_RT_BookingPNR';
@@ -31,10 +32,13 @@ test.describe(flowName, () => {
     });
 
     test('Availability Page', async() => {
-        const initialPage = new AvailabilityPage(testPage,page);
-        await initialPage.selectFlightsByDefault(flowName,'TC01-01InitialPage',compare);
+        const availPage = new AvailabilityPage(testPage,page);
+        await availPage.selectFlightsByDefault(flowName,'TC01-01InitialPage',compare);
     });
 
-   
+    test('Trip summary check for bound cards', async() => {
+        const tripPage = new TripSummaryPage(testPage,page);
+        await tripPage.validateTripInfo(flowName,'TC01-TripSummary',compare);
+    });
 
 });
