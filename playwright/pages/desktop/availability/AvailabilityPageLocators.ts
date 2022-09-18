@@ -1,6 +1,5 @@
 export default  {
     Flight_AvailableBounds:"(//button[@role='main'])[1]",
-    
     BTN_FareXS: '(//button[@data-test="TA-ff-XS"])[1]',
     BTN_FareS: '(//button[@data-test="TA-ff-S"])[1]',
     BTN_FareM: '(//button[@data-test="TA-ff-M"])[1]',

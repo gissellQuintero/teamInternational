@@ -1,7 +1,7 @@
 export default  {
-    Add_Baggage:'(//mat-icon[contains(@class,\'arrow mat-icon\')])[2]',
-    Add_CarryOn:'(//i[@class=\'material-icons\'])[1]',
-    Add_AditionalBaggage:'(//i[@class=\'material-icons\'])[2]',
+    Add_Baggage:'(//div[@class="image-card"])[2]',
+    Add_CarryOn:'(//i[@class="material-icons"])[2]',
+    Add_AditionalBaggage:'(//span[@class="mat-button-wrapper"])[2]',
     Add_SportEquipment:'(//mat-icon[contains(@class,\'arrow mat-icon\')])[3]',
     Add_Bycicle:'(//i[@class=\'material-icons\'])[2]',
     Add_Golf:'(//i[text()=\' add \'])[2]',
