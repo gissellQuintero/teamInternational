@@ -4,6 +4,7 @@ import { TestPage } from "../../TestPage";
 import locators from './TripSummaryPageLocators';
 
 export class TripSummaryPage extends commonPage {
+    
     constructor(testPage: TestPage, page: Page) {
        super(testPage, page);
     }
