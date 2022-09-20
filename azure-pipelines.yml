@@ -25,4 +25,4 @@ steps:
     command: custom
     workingDir: '$(System.DefaultWorkingDirectory)'
     verbose: false
-    customCommand: 'run test'
+    customCommand: 'npx playwright test --config=tests/playwrightDesktop.config.ts'
