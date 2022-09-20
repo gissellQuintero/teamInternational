@@ -12,6 +12,7 @@ import { ConfirmationPage} from '../../pages//desktop/confirmation/ConfirmationP
 const flowName = 'Test_01_PT_EU_RT_BookingPNR';
 const env = 'Release_UAT';
 const compare = false;
+const path = "desktop";
 
 test.describe(flowName, () => {
     let browser: Browser
@@ -37,42 +38,42 @@ test.describe(flowName, () => {
 
     test('Availability Page select default fares', async() => {
         const availPage = new AvailabilityPage(testPage,page);
-        await availPage.selectFlightsByDefault(flowName,'TC01-01InitialPage',compare);
+        await availPage.selectFlightsByDefault(flowName,'TC01-01InitialPage',compare, path);
     });
 
     test('Trip summary check for bound cards', async() => {
         const tripPage = new TripSummaryPage(testPage,page);
-        await tripPage.validateTripInfo(flowName,'TC01-TripSummary',compare);
+        await tripPage.validateTripInfo(flowName,'TC01-TripSummary',compare, path);
     });
 
     test('Passenger page fill basic information', async() =>{
         const paxPage = new PassengerPage(testPage,page);
-        await paxPage.fillOutPassengerInformation(flowName,'TC01-PassengerInformation',false);
+        await paxPage.fillOutPassengerInformation(flowName,'TC01-PassengerInformation',compare, path);
     });
 
     test('Passenger page fill contact information', async() =>{
         const paxPage = new PassengerPage(testPage,page);
-        await paxPage.enterContactInfo(flowName,'TC01-ContactInformation',compare);
+        await paxPage.enterContactInfo(flowName,'TC01-ContactInformation',compare, path);
     });
     
     test('Ancillaries page Personalize your flight', async() => {
         const ancilPage = new AncillariesPage(testPage,page);
-        await ancilPage.selectAdditionalBaggage(flowName,'TC01-BuyExtraBaggage',compare);
+        await ancilPage.selectAdditionalBaggage(flowName,'TC01-BuyExtraBaggage',compare, path);
         
     });
     test('Purchase page - Fill out Card Information', async() => {
         const purcPage = new PurchasePage(testPage,page);
-        await purcPage.enterCardDetails(flowName,'TC01-CardInformation',compare);
+        await purcPage.enterCardDetails(flowName,'TC01-CardInformation',compare, path);
     });
 
     test('Purchase page - Fill out Billing Information', async() => {
         const purcPage = new PurchasePage(testPage,page);
-        await purcPage.enterBillingDetails(flowName,'TC01-BillInformation',compare)
+        await purcPage.enterBillingDetails(flowName,'TC01-BillInformation',compare, path)
     });
 
     test('CONF page', async() =>{
         const confPage = new ConfirmationPage(testPage,page);
-        await confPage.validatePNR(flowName,'TC01-ConfirmationPage',compare)
+        await confPage.validatePNR(flowName,'TC01-ConfirmationPage',compare, path)
     });
 
 });

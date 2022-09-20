@@ -110,7 +110,6 @@ export class PassengerPage extends commonPage{
 
  public async enterContactInfo(flowName:string,screenshotTitle:string, compare:boolean, path:string) {
      
-     await this.page.click(locators.BTN_Next);
      await this.page.type(locators.Email,'test@test.com');
      await this.page.type(locators.Phone,'12345678');
      if (compare) 

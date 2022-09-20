@@ -11,14 +11,14 @@ export class commonPage {
     this.page=page
   }
   //function to add screenshot in reporter
-  protected async addTestScreenshot(flowName:string,title:string){
-    await this.page.waitForTimeout(3000)
-    await this.page.screenshot({fullPage:true, path:'./playwright/features/desktop/VC_'+flowName+'.spec.ts-snapshots/'+title+'-Chrome-Stable-win32.png'})
+  protected async addTestScreenshot(flowName:string,title:string,path:string){
+    await this.page.waitForTimeout(4000)
+    await this.page.screenshot({fullPage:true, path:'./playwright/features/'+path+'/VC_'+flowName+'.spec.ts-snapshots/'+title+'-Chrome-Stable-win32.png'})
   }
 
   protected async compareScreenshot(title:string){
    //function compare screenshots 
-    await this.page.waitForTimeout(3000)
+    await this.page.waitForTimeout(4000)
     expect(await this.page.screenshot({ fullPage: true })).toMatchSnapshot(title+".png");
 
   }

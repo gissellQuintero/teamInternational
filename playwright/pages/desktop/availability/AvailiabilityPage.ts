@@ -14,7 +14,7 @@ export class AvailabilityPage extends commonPage {
   }*/
   
 
-   public async selectFlightsByDefault(flowName: string, screenshotTitle: string, compare: boolean) {
+   public async selectFlightsByDefault(flowName: string, screenshotTitle: string, compare: boolean, path: string) {
       const tripType: string = this.testPage.getValue("tripType")
       const fareOutBound: string = this.testPage.getValue("fareOutBound")
       const fareInBound: string = this.testPage.getValue("fareInBound")
@@ -62,7 +62,7 @@ export class AvailabilityPage extends commonPage {
          } 
          else
          {
-             await this.addTestScreenshot(flowName, screenshotTitle+ " Outbound");
+             await this.addTestScreenshot(flowName, screenshotTitle+ " Outbound",path);
          }
 
          await this.page.locator(locators.Flight_AvailableBounds).waitFor;
@@ -104,7 +104,7 @@ export class AvailabilityPage extends commonPage {
          } 
          else
          {
-             await this.addTestScreenshot(flowName, screenshotTitle);
+             await this.addTestScreenshot(flowName, screenshotTitle, path);
          }
 
       }

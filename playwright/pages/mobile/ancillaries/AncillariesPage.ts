@@ -25,7 +25,7 @@ export class AncillariesPage extends commonPage{
 
         if(extraBaggage=="X")
         {
-        await this.page.waitForSelector(locators.Add_Baggage, { timeout: 10000 })
+        await this.page.waitForSelector(locators.Add_Baggage, {state:'visible',timeout: 15000 })
         await this.page.click(locators.Add_Baggage);
         await this.page.click(locators.Add_CarryOn);
         await this.page.click(locators.Add_AditionalBaggage);

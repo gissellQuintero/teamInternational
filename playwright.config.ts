@@ -11,7 +11,7 @@ import { devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
- // testDir: './playwright/features/desktop',
+  //testDir: './playwright/features/desktop',
  testDir: './playwright/features/mobile',
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
@@ -45,12 +45,12 @@ const config: PlaywrightTestConfig = {
 
   /* Configure projects for major browsers */
   projects: [
-    {
+   /* {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
       },
-    },
+    },*/
       // "iPhone 11" tests use WebKit browser.
       {
         name: 'iPhone 11',

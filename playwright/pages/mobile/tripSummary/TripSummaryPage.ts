@@ -11,15 +11,7 @@ export class TripSummaryPage extends commonPage {
 
     public async validateTripInfo(flowName: string, screenshotTitle: string, compare: boolean, path:string) {
         try {
-            const tripType: string = this.testPage.getValue("tripType");
-            await this.page.waitForSelector('.trip-summary-title');
-            const boundCardsTripInfo = await this.page.$$('bound-displayer-cont');
-            if(tripType.includes('round')){
-                expect(boundCardsTripInfo.length).toBe(2);
-            }else{
-                expect(boundCardsTripInfo.length).toBe(1);
-            }
-            if (compare) 
+             if (compare) 
             {
                 await this.compareScreenshot(screenshotTitle); 
             } 
