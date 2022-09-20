@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "playwright:test:headed": "yarn playwright test --headed",
-    "test:desktop": "npx playwright test --config=tests/playwrightDesktop.config.ts",
-    "test:mobile": "npx playwright test --config=tests/playwrightMobile.config.ts"
+    "test:desktop": "npx playwright test --config=playwrightDesktop.config.ts",
+    "test:mobile": "npx playwright test --config=playwrightMobile.config.ts"
   },
   "keywords": [],
   "author": "",
