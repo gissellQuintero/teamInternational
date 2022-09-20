@@ -1,5 +1,6 @@
 import { expect,Page } from "@playwright/test";
-import { TestPage } from "./TestPage";
+import { TestPage } from "./testPage";
+
 
 
 export class commonPage {

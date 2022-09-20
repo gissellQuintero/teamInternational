@@ -1,6 +1,6 @@
 import { expect, Page } from "@playwright/test";
 import { commonPage } from "../../commonPage"
-import { TestPage } from "../../TestPage";
+import { TestPage } from "../../testPage";
 import locators from './TripSummaryPageLocators';
 
 export class TripSummaryPage extends commonPage {

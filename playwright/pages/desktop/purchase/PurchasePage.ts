@@ -1,7 +1,7 @@
 import { expect, Page } from "@playwright/test";
 import { type } from "os";
 import {commonPage} from "../../commonPage"
-import { TestPage } from "../../TestPage";
+import { TestPage } from "../../testPage";
 import locators  from './PurchasePageLocators';
 export class PurchasePage extends commonPage{
        
