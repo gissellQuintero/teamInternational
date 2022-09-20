@@ -2,7 +2,7 @@ import { test, expect, chromium, Browser, BrowserContext, Page, devices } from '
 import * as XLSX from 'xlsx';
 import { TestPage } from '../../pages/testPage';
 import { AvailabilityPage } from '../../pages/desktop/availability/AvailiabilityPage';
-import { TripSummaryPage} from '../../pages/desktop/TripSummary/TripSummaryPage';
+import { TripSummaryPage} from '../../pages/desktop/tripSummary/TripSummaryPage';
 import { PassengerPage } from '../../pages/desktop/passenger/PassengerPage';
 import { AncillariesPage } from '../../pages/desktop/ancillaries/AncillariesPage';
 import { PurchasePage} from '../../pages/desktop/purchase/PurchasePage';

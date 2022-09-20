@@ -2,11 +2,11 @@ import { test, expect, chromium, Browser, BrowserContext, Page, devices } from '
 import * as XLSX from 'xlsx';
 import { TestPage } from '../../pages/testPage';
 import { AvailabilityPage } from '../../pages/mobile/availability/AvailabilityPage';
-import { TripSummaryPage} from '../../pages/mobile/tripSummary/TripSummaryPage';
 import { PassengerPage } from '../../pages/mobile/passenger/PassengerPage';
 import { AncillariesPage } from '../../pages/mobile/ancillaries/AncillariesPage';
 import { PurchasePage} from '../../pages/mobile/purchase/PurchasePage';
 import { ConfirmationPage} from '../../pages//mobile/confirmation/ConfirmationPage';
+import { TripSummaryPage } from '../../pages/desktop/tripSummary/TripSummaryPage';
 
 
 const flowName = 'Test_01_PT_EU_RT_BookingPNR';
