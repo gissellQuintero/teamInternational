@@ -20,9 +20,17 @@ steps:
   displayName: 'Install Playwright '
 
 - task: Npm@1
-  displayName: 'Execute Test'
+  displayName: 'Execute Test Desktop'
   inputs:
     command: custom
     workingDir: '$(System.DefaultWorkingDirectory)'
     verbose: false
-    customCommand: 'npx playwright test --config=tests/playwrightDesktop.config.ts'
+    customCommand: 'run test:desktop'
+  
+- task: Npm@1
+  displayName: 'Execute Test Mobile'
+  inputs:
+    command: custom
+    workingDir: '$(System.DefaultWorkingDirectory)'
+    verbose: false
+    customCommand: 'run test:mobile'
