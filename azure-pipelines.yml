@@ -34,3 +34,11 @@ steps:
     workingDir: '$(System.DefaultWorkingDirectory)'
     verbose: false
     customCommand: 'run test:mobile'
+
+- task: PublishTestResults@2
+  displayName: 'Publish Playwright e2e tests Results'
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFiles: 'reporter.xml'
+    testRunTitle: 'AVBOOK - e2e'
+    searchFolder: '$(System.DefaultWorkingDirectory)/'

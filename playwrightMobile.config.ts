@@ -11,10 +11,9 @@ import { devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
- // testDir: './playwright/features/desktop',
  testDir: './playwright/features/mobile',
   /* Maximum time one test can run for. */
-  timeout: 30 * 1000,
+  timeout: 1200 * 1000,
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
@@ -31,9 +30,16 @@ const config: PlaywrightTestConfig = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ["list"], // -> console
+    ['junit', { outputFile: 'reporter.xml' }],
+    ['html', {
+        open: "never"
+    }] // -> HTML
+],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    headless: true,
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -45,13 +51,7 @@ const config: PlaywrightTestConfig = {
 
   /* Configure projects for major browsers */
   projects: [
-    /*{
-      name: 'chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-      },
-    },*/
-      // "iPhone 11" tests use WebKit browser.
+     // "iPhone 11" tests use WebKit browser.
       {
         name: 'iPhone 11',
         testDir: './playwright/features/mobile/',
@@ -60,44 +60,8 @@ const config: PlaywrightTestConfig = {
           ...devices['iPhone 11'],
         },
       },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: {
-    //     ...devices['Pixel 5'],
-    //   },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: {
-    //     ...devices['iPhone 12'],
-    //   },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: {
-    //     channel: 'msedge',
-    //   },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: {
-    //     channel: 'chrome',
-    //   },
-    // },
   ],
 
-  /* Folder for test artifacts such as screenshots, videos, traces, etc. */
-  // outputDir: 'test-results/',
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   port: 3000,
-  // },
 };
 
 export default config;

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "playwright:test:headed": "yarn playwright test --headed",
     "test:desktop": "npx playwright test --config=playwrightDesktop.config.ts",
     "test:mobile": "npx playwright test --config=playwrightMobile.config.ts"
   },
