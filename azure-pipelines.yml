@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 schedules:
-- cron: "5 24 * * Mon-Fri"
+- cron: "05 24 * * Mon-Fri"
   always: true
   displayName: M-F 5:00 PM daily build
   branches:
