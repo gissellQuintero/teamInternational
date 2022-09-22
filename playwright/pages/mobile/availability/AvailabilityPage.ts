@@ -62,7 +62,7 @@ export class AvailabilityPage extends commonPage {
          } 
          else
          {
-             await this.addTestScreenshot(flowName, screenshotTitle+ " Outbound",path);
+             await this.addTestScreenshot(flowName, screenshotTitle+ " Outbound",path,"");
          }
 
          await this.page.locator(locators.Flight_AvailableBounds).waitFor;
@@ -103,7 +103,7 @@ export class AvailabilityPage extends commonPage {
          } 
          else
          {
-             await this.addTestScreenshot(flowName, screenshotTitle,path);
+             await this.addTestScreenshot(flowName, screenshotTitle,path,"");
          }
 
       }

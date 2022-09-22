@@ -34,6 +34,14 @@ steps:
     workingDir: '$(System.DefaultWorkingDirectory)'
     verbose: false
     customCommand: 'run test:desktop'
+
+- task: Npm@1
+  displayName: 'Execute Test Desktop'
+  inputs:
+    command: custom
+    workingDir: '$(System.DefaultWorkingDirectory)'
+    verbose: false
+    customCommand: 'run test:mobile'   
   
 - task: PublishTestResults@2
   displayName: 'Publish Playwright e2e tests Results'

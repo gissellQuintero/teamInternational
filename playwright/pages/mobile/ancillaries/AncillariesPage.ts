@@ -53,7 +53,7 @@ export class AncillariesPage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle,path);
+            await this.addTestScreenshot(flowName, screenshotTitle,path,"");
         }
         await this.page.click(locators.BTN_NextPage);
            
@@ -66,7 +66,7 @@ export class AncillariesPage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle,path);
+            await this.addTestScreenshot(flowName, screenshotTitle,path,"");
         }
         
         await this.page.click(locators.BTN_TimeToThink)

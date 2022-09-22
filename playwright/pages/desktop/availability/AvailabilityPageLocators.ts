@@ -8,6 +8,7 @@ export default  {
     BTN_FareXXL: '(//button[@data-test="TA-ff-XXL"])[1]',
     BTN_BusinessClass: '(//span[@class=\'cabin-title\'])[2]',
     BTN_BestPrice: '(//div[@class=\'new-filter-component vertical-aligned-line\']//button)[2]',
+    BTN_Continue:"#continue-btn-footer",
 
 }
      

@@ -1,7 +1,7 @@
 import { expect, Page } from "@playwright/test";
 import { commonPage } from "../../commonPage"
 import { TestPage } from "../../testPage";
-import locators from './TripSummaryPageLocators';
+import locators from ".//TripSummaryPageLocators"
 
 export class TripSummaryPage extends commonPage {
     
@@ -17,7 +17,7 @@ export class TripSummaryPage extends commonPage {
             } 
             else
             {
-                await this.addTestScreenshot(flowName, screenshotTitle,path);
+                await this.addTestScreenshot(flowName, screenshotTitle,path,locators.BTN_Continue);
             }
             await this.page.click(locators.BTN_Continue);
               } catch (error) {

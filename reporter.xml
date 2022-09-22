@@ -1,0 +1,22 @@
+<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="70.33106499999762">
+<testsuite name="Test_01_PT_EU_RT_BookingPNR.spec.ts" timestamp="1663873729093" hostname="" tests="7" failures="0" skipped="0" time="61.278" errors="0">
+<testcase name="Test_01_PT_EU_RT_BookingPNR Availability Page select default fares" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:41:5 › Test_01_PT_EU_RT_BookingPNR › Availability Page select default fares" time="8.847">
+</testcase>
+<testcase name="Test_01_PT_EU_RT_BookingPNR Trip summary check for bound cards" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:46:5 › Test_01_PT_EU_RT_BookingPNR › Trip summary check for bound cards" time="1.908">
+</testcase>
+<testcase name="Test_01_PT_EU_RT_BookingPNR Passenger page fill passenger information" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:51:5 › Test_01_PT_EU_RT_BookingPNR › Passenger page fill passenger information" time="2.499">
+</testcase>
+<testcase name="Test_01_PT_EU_RT_BookingPNR Ancillaries page Personalize your flight" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:57:5 › Test_01_PT_EU_RT_BookingPNR › Ancillaries page Personalize your flight" time="18.841">
+</testcase>
+<testcase name="Test_01_PT_EU_RT_BookingPNR Purchase page - Fill out Card Information" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:63:5 › Test_01_PT_EU_RT_BookingPNR › Purchase page - Fill out Card Information" time="3.099">
+</testcase>
+<testcase name="Test_01_PT_EU_RT_BookingPNR Purchase page - Fill out Billing Information" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:68:5 › Test_01_PT_EU_RT_BookingPNR › Purchase page - Fill out Billing Information" time="1.319">
+</testcase>
+<testcase name="Test_01_PT_EU_RT_BookingPNR CONF page" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:73:5 › Test_01_PT_EU_RT_BookingPNR › CONF page" time="24.765">
+<system-out>
+<![CDATA[The element didn't appear.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

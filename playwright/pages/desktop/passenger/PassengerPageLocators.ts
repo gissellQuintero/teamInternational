@@ -23,7 +23,7 @@ export default  {
 
     Email:'(//input[@data-placeholder=\'E-mail\'])[1]',
     Phone: '(//input[contains(@class,\'mat-input-element mat-form-field-autofill-control\')])[2]',
-    BTN_Continue: ".continue-btn",
+    BTN_ContactInformation:"(//button[@class='btn-primary passenger-btn ng-star-inserted'])",
     AgreePolicy: ".agree-everything",
     CHECKBOX_Agree: ".mat-checkbox-input",
 
@@ -33,11 +33,12 @@ export default  {
     CHKBOX_LifeMiles:'(//label[@class=\'mat-checkbox-layout\']//span)[1]',
     FrequentTravelerNum:'(//input[contains(@class,\'mat-input-element mat-form-field-autofill-control\')])[3]',
 
+    
     BTN_NextPage: "#continue-btn-footer-static",
     BTN_NextPassenger: '#mat-tab-content-0-0 > div > div > div > button',
     BTN_NextChildren: '(//button[contains(@class,\'btn-primary passenger-btn\')])[1]',
     BTN_NextInfant:'//div[@class= \'passenger-button-section ng-star-inserted\']//button[1]',
-
+    BTN_Continue: "(//button[@class='btn-primary continue-btn ng-star-inserted'])",
 
 ///-----------------------elements for mobile mode -----------------------
 

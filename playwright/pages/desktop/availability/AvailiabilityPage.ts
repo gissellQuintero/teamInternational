@@ -62,11 +62,10 @@ export class AvailabilityPage extends commonPage {
          } 
          else
          {
-             await this.addTestScreenshot(flowName, screenshotTitle+ " Outbound",path);
+             await this.addTestScreenshot(flowName, screenshotTitle+ " Outbound",path,locators.Flight_AvailableBounds);
          }
 
          await this.page.locator(locators.Flight_AvailableBounds).waitFor;
-         await this.page.waitForTimeout(5000)
          await this.page.locator(locators.Flight_AvailableBounds).click();
 
          switch (fareInBound) {
@@ -104,7 +103,7 @@ export class AvailabilityPage extends commonPage {
          } 
          else
          {
-             await this.addTestScreenshot(flowName, screenshotTitle, path);
+             await this.addTestScreenshot(flowName, screenshotTitle, path, locators.BTN_Continue);
          }
 
       }

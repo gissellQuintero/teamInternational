@@ -34,7 +34,7 @@ export class PassengerPage extends commonPage{
              await this.page.click(locators.SLC_MonthAditional);
              await this.page.click(locators.SLC_Month);
              await this.page.type(locators.Year,(+year - 20) + "");
-             await this.addTestScreenshot(flowName,'TC02-PassengerDataAditional',path);
+             await this.addTestScreenshot(flowName,'TC02-PassengerDataAditional',path, locators.Year);
          }
 
          if (compare) 
@@ -43,7 +43,7 @@ export class PassengerPage extends commonPage{
          } 
          else
          {
-             await this.addTestScreenshot(flowName, screenshotTitle,path);
+             await this.addTestScreenshot(flowName, screenshotTitle,path, locators.BTN_ContactInformation);
          }
      }
  
@@ -73,7 +73,7 @@ export class PassengerPage extends commonPage{
 
          }
          
-         await this.addTestScreenshot(flowName,'TC03-PassengerChildren',path);
+         await this.addTestScreenshot(flowName,'TC03-PassengerChildren',path,locators.Year);
          
      }
 
@@ -104,7 +104,7 @@ export class PassengerPage extends commonPage{
          }
      }
 
-     await this.addTestScreenshot(flowName,screenshotTitle,path);
+     await this.addTestScreenshot(flowName,screenshotTitle,path,locators.BTN_Next);
     
  }
 
@@ -119,7 +119,7 @@ export class PassengerPage extends commonPage{
      } 
      else
      {
-         await this.addTestScreenshot(flowName, screenshotTitle,path);
+         await this.addTestScreenshot(flowName, screenshotTitle,path,locators.Email);
     }
      await this.page.click(locators.BTN_Continue);
  }
@@ -149,7 +149,7 @@ export class PassengerPage extends commonPage{
      } 
      else
      {
-         await this.addTestScreenshot(flowName, screenshotTitle,path);
+         await this.addTestScreenshot(flowName, screenshotTitle,path,locators.BTN_NextPassenger);
     }
    
    

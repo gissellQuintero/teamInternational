@@ -22,7 +22,7 @@ export class ConfirmationPage extends commonPage{
             } 
             else
             {
-                await this.addTestScreenshot(flowName, screenshotTitle,path); 
+                await this.addTestScreenshot(flowName, screenshotTitle,path,""); 
             }
             
         await this.page.waitForSelector(locators.BookingCode, { timeout: 20000 })
@@ -45,7 +45,7 @@ public async validatePNRTTT(flowName:string,screenshotTitle:string, compare:bool
             } 
             else
             {
-                await this.addTestScreenshot(flowName, screenshotTitle,path); 
+                await this.addTestScreenshot(flowName, screenshotTitle,path,""); 
             }
             
         await this.page.waitForSelector(locators.BookingCodeTimeToThink, { timeout: 20000 })

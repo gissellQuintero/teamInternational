@@ -12,7 +12,7 @@ export class ConfirmationPage extends commonPage{
  public async validatePNR(flowName:string,screenshotTitle:string, compare:boolean, path:string) {
     //debugger
     try {
-        await this.page.waitForSelector(locators.BookingCode, { timeout: 20000 })
+        await this.page.waitForSelector(locators.BookingCode)
       } catch (error) {'enter code here'
         console.log("The element didn't appear.")
       }
@@ -22,10 +22,10 @@ export class ConfirmationPage extends commonPage{
             } 
             else
             {
-                await this.addTestScreenshot(flowName, screenshotTitle,path); 
+                await this.addTestScreenshot(flowName, screenshotTitle,path,locators.BookingCode); 
             }
             
-        await this.page.waitForSelector(locators.BookingCode, { timeout: 20000 })
+        await this.page.waitForSelector(locators.BookingCode)
 
         const visible = await this.page.isVisible(locators.BookingCode);
         expect(visible).toBeTruthy();
@@ -45,10 +45,10 @@ public async validatePNRTTT(flowName:string,screenshotTitle:string, compare:bool
             } 
             else
             {
-                await this.addTestScreenshot(flowName, screenshotTitle,path); 
+                await this.addTestScreenshot(flowName, screenshotTitle,path,locators.BookingCodeTimeToThink); 
             }
             
-        await this.page.waitForSelector(locators.BookingCodeTimeToThink, { timeout: 20000 })
+        await this.page.waitForSelector(locators.BookingCodeTimeToThink)
 
         const visible = await this.page.isVisible(locators.BookingCodeTimeToThink);
         expect(visible).toBeTruthy();

@@ -54,7 +54,7 @@ export class PurchasePage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle, path);
+            await this.addTestScreenshot(flowName, screenshotTitle, path,"");
         }
     }
 
@@ -73,7 +73,7 @@ export class PurchasePage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle,path);
+            await this.addTestScreenshot(flowName, screenshotTitle,path,locators.Accept_information);
         }
         
         await this.page.click(locators.BTN_Continueandpay);
@@ -98,7 +98,7 @@ export class PurchasePage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle, path);
+            await this.addTestScreenshot(flowName, screenshotTitle, path,"");
         }
     }
 
@@ -118,7 +118,7 @@ export class PurchasePage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle,path);
+            await this.addTestScreenshot(flowName, screenshotTitle,path,locators.SLC_PlaceOfIssueOfTheCardOption);
         }
     }
        
@@ -147,7 +147,7 @@ export class PurchasePage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle,path);
+            await this.addTestScreenshot(flowName, screenshotTitle,path,locators.TXT_cardHolderPhoneNumber);
         }
     }
 
@@ -170,7 +170,7 @@ export class PurchasePage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle, path);
+            await this.addTestScreenshot(flowName, screenshotTitle, path,locators.CHCK_InternationalPrivacyPolicy);
         }
         
         await this.page.click(locators.BTN_SecurePayment);
@@ -210,7 +210,7 @@ export class PurchasePage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle,path);
+            await this.addTestScreenshot(flowName, screenshotTitle,path,locators.TXT_cardHolderPhoneNumber);
         }
     }
 
@@ -229,7 +229,7 @@ export class PurchasePage extends commonPage{
         } 
         else
         {
-            await this.addTestScreenshot(flowName, screenshotTitle,path);
+            await this.addTestScreenshot(flowName, screenshotTitle,path,locators.BTN_Continueandpay);
         }
         
         await this.page.click(locators.BTN_continueAndPayCPD);

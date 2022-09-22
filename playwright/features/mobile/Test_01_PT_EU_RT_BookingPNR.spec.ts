@@ -6,7 +6,7 @@ import { PassengerPage } from '../../pages/mobile/passenger/PassengerPage';
 import { AncillariesPage } from '../../pages/mobile/ancillaries/AncillariesPage';
 import { PurchasePage} from '../../pages/mobile/purchase/PurchasePage';
 import { ConfirmationPage} from '../../pages//mobile/confirmation/ConfirmationPage';
-import { TripSummaryPage } from '../../pages/desktop/tripSummary/TripSummaryPage';
+import { TripSummaryPage } from '../../pages/mobile/tripSummary/TripSummaryPage';
 
 
 const flowName = 'Test_01_PT_EU_RT_BookingPNR';
