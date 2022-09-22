@@ -36,7 +36,7 @@ steps:
     customCommand: 'run test:desktop'
 
 - task: Npm@1
-  displayName: 'Execute Test Desktop'
+  displayName: 'Execute Test Mobile'
   inputs:
     command: custom
     workingDir: '$(System.DefaultWorkingDirectory)'
