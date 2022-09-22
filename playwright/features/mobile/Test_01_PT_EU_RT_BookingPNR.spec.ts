@@ -8,7 +8,7 @@ import { PurchasePage} from '../../pages/mobile/purchase/PurchasePage';
 import { ConfirmationPage} from '../../pages//mobile/confirmation/ConfirmationPage';
 import { TripSummaryPage } from '../../pages/mobile/tripSummary/TripSummaryPage';
 
-/*
+
 const flowName = 'Test_01_PT_EU_RT_BookingPNR';
 const env = 'Release_UAT';
 const compare = false;
@@ -75,4 +75,4 @@ test.describe(flowName, () => {
         await confPage.validatePNR(flowName,'TC01-ConfirmationPage',compare,path)
     });
 
-});*/
+});
