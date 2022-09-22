@@ -8,7 +8,7 @@ import { AncillariesPage } from '../../pages/desktop/ancillaries/AncillariesPage
 import { PurchasePage} from '../../pages/desktop/purchase/PurchasePage';
 import { ConfirmationPage} from '../../pages//desktop/confirmation/ConfirmationPage';
 
-
+/*
 const flowName = 'Test_01_PT_EU_RT_BookingPNR';
 const env = 'Release_UAT';
 const compare = false;
@@ -76,4 +76,4 @@ test.describe(flowName, () => {
         await confPage.validatePNR(flowName,'TC01-ConfirmationPage',compare, path)
     });
 
-});
+});*/
