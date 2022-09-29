@@ -49,6 +49,7 @@ test.describe(flowName, () => {
     test('Passenger page fill basic information', async() =>{
         const paxPage = new PassengerPage(testPage,page);
         await paxPage.fillOutPassengerInformation(flowName,'TC01-PassengerInformation',compare, path);
+        await paxPage.enterSpecialFeatures(flowName,'TC01-PassengerInformation',compare, path)
     });
 
     test('Passenger page fill contact information', async() =>{

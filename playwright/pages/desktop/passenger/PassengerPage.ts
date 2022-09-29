@@ -149,7 +149,7 @@ export class PassengerPage extends commonPage{
      } 
      else
      {
-         await this.addTestScreenshot(flowName, screenshotTitle,path,locators.BTN_NextPassenger);
+         await this.addTestScreenshot(flowName, screenshotTitle,path,locators.BTN_ContactInformation);
     }
    
    
