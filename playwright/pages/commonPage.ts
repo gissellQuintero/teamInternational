@@ -12,13 +12,10 @@ export class commonPage {
     this.page=page
   }
   //function to add screenshot in reporter
-  protected async addTestScreenshot(flowName:string,title:string,path:string,element:string){
+  protected async addTestScreenshot(flowName:string,title:string,path:string){
    
-    if (element.length!=0)
-    {
-    await this.page.waitForSelector(element);
-    }
-    await this.page.screenshot({fullPage:true, path:'./playwright/features/'+path+'/'+flowName+'.spec.ts-snapshots/'+title+'-Chrome-Stable-win32.png'})
+    await this.page.waitForTimeout(2000)
+    await this.page.screenshot({fullPage:false, path:'./playwright/features/'+path+'/'+flowName+'.spec.ts-snapshots/'+title+'-Chrome-Stable-win32.png'})
   }
 
   protected async compareScreenshot(title:string){

@@ -1,20 +1,43 @@
-<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="67.22541200000047">
-<testsuite name="Test_01_PT_EU_RT_BookingPNR.spec.ts" timestamp="1663883086019" hostname="" tests="7" failures="0" skipped="0" time="59.494" errors="0">
-<testcase name="Test_01_PT_EU_RT_BookingPNR Availability Page select default fares" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:41:5 › Test_01_PT_EU_RT_BookingPNR › Availability Page select default fares" time="8.665">
-</testcase>
-<testcase name="Test_01_PT_EU_RT_BookingPNR Trip summary check for bound cards" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:46:5 › Test_01_PT_EU_RT_BookingPNR › Trip summary check for bound cards" time="1.743">
-</testcase>
-<testcase name="Test_01_PT_EU_RT_BookingPNR Passenger page fill passenger information" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:51:5 › Test_01_PT_EU_RT_BookingPNR › Passenger page fill passenger information" time="2.21">
-</testcase>
-<testcase name="Test_01_PT_EU_RT_BookingPNR Ancillaries page Personalize your flight" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:57:5 › Test_01_PT_EU_RT_BookingPNR › Ancillaries page Personalize your flight" time="16.923">
-</testcase>
-<testcase name="Test_01_PT_EU_RT_BookingPNR Purchase page - Fill out Card Information" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:63:5 › Test_01_PT_EU_RT_BookingPNR › Purchase page - Fill out Card Information" time="2.06">
-</testcase>
-<testcase name="Test_01_PT_EU_RT_BookingPNR Purchase page - Fill out Billing Information" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:68:5 › Test_01_PT_EU_RT_BookingPNR › Purchase page - Fill out Billing Information" time="1.258">
-</testcase>
-<testcase name="Test_01_PT_EU_RT_BookingPNR CONF page" classname="[iPhone 11] › Test_01_PT_EU_RT_BookingPNR.spec.ts:73:5 › Test_01_PT_EU_RT_BookingPNR › CONF page" time="26.635">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="38.28270399999619">
+<testsuite name="principalWebPage.spec.ts" timestamp="1667355604425" hostname="" tests="1" failures="0" skipped="0" time="23.976" errors="0">
+<testcase name="Find available sections" classname="[chromium] › principalWebPage.spec.ts:31:5 › Find available sections" time="23.976">
 <system-out>
-<![CDATA[The element didn't appear.
+<![CDATA[NUMERO ELEMENTOS ---  8
+NUMERO Links ---  28
+selector of element 1#fp-nav > ul > li:nth-child(1) > a
+selector of element 2#fp-nav > ul > li:nth-child(2) > a
+selector of element 3#fp-nav > ul > li:nth-child(3) > a
+selector of element 4#fp-nav > ul > li:nth-child(4) > a
+selector of element 5#fp-nav > ul > li:nth-child(5) > a
+selector of element 6#fp-nav > ul > li:nth-child(6) > a
+selector of element 7#fp-nav > ul > li:nth-child(7) > a
+URL - 1 - https://www.teaminternational.com/services/software-development-outsourcing/
+URL - 2 - https://www.teaminternational.com/services/intelligent-automation-services-rpa/
+URL - 3 - https://www.teaminternational.com/rpa-governance-model/
+URL - 4 - https://www.teaminternational.com/services/software-qa-testing/
+URL - 5 - https://www.teaminternational.com/services/microsoft-services/
+URL - 6 - https://www.teaminternational.com/services/professional-it-consulting-services/
+URL - 7 - https://www.teaminternational.com/services/data-analytics-services/
+URL - 8 - https://www.teaminternational.com/services/managed-it-services/
+URL - 9 - https://www.teaminternational.com/industries/logistics-transportation/
+URL - 10 - https://www.teaminternational.com/industries/oil-gas/
+URL - 11 - https://www.teaminternational.com/industries/it-solutions-for-telecom-industry/
+URL - 12 - https://www.teaminternational.com/industries/information-technology-teams/
+URL - 13 - https://www.teaminternational.com/industries/financial-services/
+URL - 14 - https://www.teaminternational.com/industries/healthcare-life-sciences/
+URL - 15 - https://www.teaminternational.com/industries/it-hospitality-solutions/
+URL - 16 - https://www.teaminternational.com/industries/retail-it-solutions/
+URL - 17 - https://www.teaminternational.com/industries/digital-marketing/
+URL - 18 - /locations/#us
+URL - 19 - /locations/#portugal
+URL - 20 - /locations/#mexico
+URL - 21 - /locations/#ukraine
+URL - 22 - /locations/#colombia
+URL - 23 - /locations/#argentina
+URL - 24 - /locations/#poland
+URL - 25 - https://www.teaminternational.com/blog/
+URL - 26 - https://www.teaminternational.com/white-papers/
+URL - 27 - /news/
 ]]>
 </system-out>
 </testcase>

@@ -2,8 +2,8 @@
   "include": [
     "node_modules/cypress",
     "cypress/*/*.ts",
-    "playwright/*/*.ts"
-, "playwright/fixtures/desktop/Test_05_PT_BR_OW_BookingPNR.spec.ts", "playwright/fixtures/desktop/Test_04_SP_CO_OW_BookingPNR.spec.ts", "playwright/fixtures/desktop/Test_03_SP_CO_RT_BookingPNR.spec.ts", "playwright/fixtures/desktop/Test_02_EN_US_RT_BookingPNR.spec.ts"  ],
+    "playwright/*/*.ts", 
+      ],
   "exclude": [
     "node",
     "node_modules"

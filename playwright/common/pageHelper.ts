@@ -17,6 +17,7 @@ export function buildUrl(){
               + "nbInfants=" + this.getValue("nbInfants") + "&"
               + "pointOfSale=" + this.getValue("pointOfSale") + "&"
               + "trace=" + this.getValue("trace") + "&"
-              + "tripType=" + this.getValue("tripType")
+              + "tripType=" + this.getValue("tripType") + "&"
+              + "useHPP=" + this.getValue("useHPP")
     return url;
 }
